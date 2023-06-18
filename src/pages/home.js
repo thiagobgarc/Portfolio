@@ -14,7 +14,7 @@ export const Home = () => {
            Welcome
         </h1>
         <h3 style={styles.text2} className="summary">
-        As a software engineer, I have expertise in programming languages such as Javascript, Python, and Ruby. I have experience using various frameworks and tools in my projects, including React Native, Express.js, Postgres, and Django.
+        As a software engineer, I have expertise in programming languages such as Javascript, Python, and Ruby. I have experience using various frameworks and tools in my projects, including React Native, Express.js, Postgres, Django, iOS Swift, and Flutter.
         </h3>
         <h3 style={styles.projects} className="projects">
             Projects
