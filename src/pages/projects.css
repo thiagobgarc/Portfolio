@@ -32,6 +32,7 @@ div {
     min-height: fit-content;
     max-height: fit-content;
     position: relative;
+    flex: 1;
 }
 
 .summary{
