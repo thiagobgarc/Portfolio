@@ -5,34 +5,45 @@ import { Button, Input } from "reactstrap"
 import URL from "./URL"
 
 export const Contact = () => {
+    // State for storing data from API
     const [data, setData] = useState([])
+    // State for name input
     const [name, setName] = useState('')
+    // State for phone input
     const [phone, setPhone] = useState('')
+    // State for email input
     const [email, setEmail] = useState('')
 
+    // Get Data 
     const getData = () => {
         fetch(`${URL}`)
         .then(resp => resp.json())
         .then(data => {
             console.log('data:', data)
+            // Set the fetched data in state
             setData(data)
         })
+        // Catch error
         .catch(error => console.error(error))
     }
 
     const handleNameChange = (event) => {
+        // Update name state on input change
         setName(event.target.value)
     }
     
     const handlePhoneChange = (event) => {
+        // Update phone state on input change
         setPhone(event.target.value)
     }
     
     const handleEmailChange = (event) => {
+        // handle email state on input change
         setEmail(event.target.value)
     }
 
     const handleSubmit = async() => {
+        // LOGS
         console.log('New name:', name)
         console.log('New phone:', phone)
         console.log('New email:', email)
@@ -43,18 +54,24 @@ export const Contact = () => {
                 Accept: 'application/json',
                 'Content-Type': 'application/json'
             },
+            // Send form data to the API
             body: JSON.stringify({name: name, phone: phone, email: email})
         })
         console.log('Response:', response)
         const json = await response.json()
         console.log('New data:', json)
+        // Clear name input
         setName('')
+        // Clear phone input
         setPhone('')
+        // Clear email input 
         setEmail('')
+        // Refresh the data by fetching it again
         getData()
     }
 
     useEffect(()=> {
+        // Fetch data when the component mounts
         getData()
     }, [])
 

@@ -9,38 +9,31 @@ export const Home = () => {
     return (
         
         <div>
+            {/* Navigation Bar */}
             <Navbars/>
+            {/* Background image */}
             <MyComponent/>
+            {/* div with old gray box used in first code */}
         <div style={styles.box}>
+            {/* Welcome header */}
         <h1 style={styles.Text} className="welcome">
            Welcome
         </h1>
+        {/* Summary text */}
         <h3 style={styles.text2} className="summary">
         As a software engineer, I have expertise in programming languages such as Javascript, Python, and Dart. I have experience using various frameworks and tools in my projects, including React Native, Express.js, Postgres, Django, iOS Swift, and Flutter.
         </h3>
+        {/* H3 header for Projects */}
         <h3 style={styles.projects} className="projects">
             Projects
         </h3>
-        {/* <h5 style={styles.h5}>
-            <a href={seedData.verseMe.link}>{seedData.verseMe.projectName}</a>
-        </h5>
-        <h5 style={styles.h5}>
-            <a href={seedData.bullsEye.link}>{seedData.bullsEye.projectName}</a>
-        </h5>
-        <h5 style={styles.h5}>
-            <a href={seedData.roomieFinderz.link}>{seedData.roomieFinderz.projectName}</a>
-        </h5>
-        <h5 style={styles.h5}>
-            <a href={seedData.reactMessage.link}>{seedData.reactMessage.projectName}</a>
-        </h5>
-        <h5 style={styles.h5}>
-            <a href={seedData.yada.link}>{seedData.yada.projectName}</a>
-        </h5> */}
-<div>
-  {seedData.map((seed, index) => (
-    <h5 style={styles.h5} key={index}>
-      <a href={seed.link}>{seed.projectName}</a>
-    </h5>
+        {/* Separate div for MAP method */}
+        <div>
+            {/* Mapping Seed Data */}
+            {seedData.map((seed, index) => (
+            <h5 style={styles.h5} key={index}>
+                <a href={seed.link}>{seed.projectName}</a>
+            </h5>
   ))}
 </div>
         </div>
