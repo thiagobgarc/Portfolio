@@ -158,7 +158,7 @@ const styles = {
         fontSize: 50,
         fontWeight: 'bold',
         opacity: '70%',
-        color: 'black'
+        color: 'white'
     },
     nameInput: {
         alignItems: 'center',
