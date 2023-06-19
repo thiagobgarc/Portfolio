@@ -1,9 +1,11 @@
 import { MyComponent } from "../components/Background"
 import { Navbars } from "../nav/NavBar"
 import "./projects.css"
+import seedData from "../seed/seedData"
+import images from "../images/verseMe"
 
 export const Home = () => {
-   
+
     return (
         
         <div>
@@ -20,19 +22,19 @@ export const Home = () => {
             Projects
         </h3>
         <h5 style={styles.h5}>
-        <a href="https://github.com/thiagobgarc/Verse-Me">Verse Me</a>
+            <a href={seedData.verseMe.link}>{seedData.verseMe.projectName}</a>
         </h5>
         <h5 style={styles.h5}>
-            <a href="https://github.com/thiagobgarc/BullsEye">Bullseye</a>
+            <a href={seedData.bullsEye.link}>{seedData.bullsEye.projectName}</a>
         </h5>
         <h5 style={styles.h5}>
-            <a href="https://github.com/s-laul/roomiefinderz-frontend">RoomieFinderz</a>
+            <a href={seedData.roomieFinderz.link}>{seedData.roomieFinderz.projectName}</a>
         </h5>
         <h5 style={styles.h5}>
-            <a href="https://github.com/thiagobgarc/ReactMessage">React Message</a>
+            <a href={seedData.reactMessage.link}>{seedData.reactMessage.projectName}</a>
         </h5>
         <h5 style={styles.h5}>
-            <a href="https://github.com/thiagobgarc/YadaFp-Frontend">Yada/Food Pantry</a>
+            <a href={seedData.yada.link}>{seedData.yada.projectName}</a>
         </h5>
         </div>
         </div>
@@ -46,13 +48,13 @@ const styles = {
         marginBottom: '3rem', 
         marginTop: '1.5rem',
         fontWeight: 'bold',
-        display: 'flex'
+        display: 'flex',
     },
     text2: {
         fontSize: '1.2rem', 
         lineHeight: '1.5', 
         marginBottom: '1rem', 
-        marginRight: '18rem'
+        marginRight: '18rem',
     },
     Display: {
         height: 'auto',
@@ -60,28 +62,30 @@ const styles = {
         background: 'snow'
     },
     projects: {
-        textAlign: 'right',
+        textAlign: 'center',
         marginBottom: '1rem', 
-        fontSize: '1.5rem', 
+        fontSize: '3rem', 
         fontWeight: 'bold',
+        paddingTop: '1em'
     },
     h5: {
-        textAlign: 'right',
+        textAlign: 'center',
         marginBottom: '1rem', 
         fontSize: '1rem', 
         textDecoration: 'none',
         color: 'white',
+        fontWeight: 'bold'
     },
     box: {
         // backgroundColor: 'grey',
-        marginLeft: 20,
-        marginRight: 20,
-        marginBottom: 20,
+        marginLeft: '1.2500em',
+        marginRight: '1.2500em',
+        marginBottom: '1.2500em',
     },
     image: {
         borderRadius: '20%',
-        width: 25,
-        height: 25,
+        width: '1.5625em',
+        height: '1.5625em',
     },
     container: {
         display: 'flex',

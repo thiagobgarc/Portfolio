@@ -1,17 +1,17 @@
 .projects{
     position: relative;
-    bottom: 200px;
-    border-top: solid 2px black;
-    border-left: solid 2px black;
-    margin-left: 70%;
-    max-width: fit-content;
-    max-height: fit-content;
-    min-width: fit-content;
+    bottom: 1em;
+    /* border-top: solid  black;
+    border-left: solid  black; */
+    text-align: center;
+    max-width: auto fit-content;
+    max-height: auto fit-content;
+    min-width: auto fit-content;
     min-height: auto;
 }
 h5 {
     position: relative;
-    bottom: 200px;
+    bottom: 1em;
     text-decoration: none;
     color: white
 
@@ -19,8 +19,8 @@ h5 {
 
 h1 {
     position: relative;
-    top: 50px;
-    font-size: 100px;
+    top: .25em;
+    font-size: .5em;
 }
 
 a {
@@ -32,4 +32,8 @@ div {
     min-height: fit-content;
     max-height: fit-content;
     position: relative;
+}
+
+.summary{
+    padding-bottom: 20em;
 }
