@@ -5,8 +5,7 @@ export const About = () => {
     return (
         <div>
             <Navbars/>
-            <MyComponent/>
-        <h1 style={styles.aboutMe}> About Me</h1>
+        <h1 style={styles.aboutMe} className="aboutMe">About Me</h1>
         <div>
         <h3 style={styles.text}>
         Hello and welcome to my software engineering portfolio! My name is Thiago Garcia and I am a software engineer with a passion for creating elegant and effective solutions to complex problems.
