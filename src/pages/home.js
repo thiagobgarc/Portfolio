@@ -49,12 +49,14 @@ const styles = {
         marginTop: '1.5rem',
         fontWeight: 'bold',
         display: 'flex',
+        color: 'white'
     },
     text2: {
         fontSize: '1.2rem', 
         lineHeight: '1.5', 
         marginBottom: '1rem', 
         marginRight: '18rem',
+        color: 'white'
     },
     Display: {
         height: 'auto',
