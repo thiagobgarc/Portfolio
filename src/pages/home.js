@@ -16,7 +16,7 @@ export const Home = () => {
            Welcome
         </h1>
         <h3 style={styles.text2} className="summary">
-        As a software engineer, I have expertise in programming languages such as Javascript, Python, and Ruby. I have experience using various frameworks and tools in my projects, including React Native, Express.js, Postgres, Django, iOS Swift, and Flutter.
+        As a software engineer, I have expertise in programming languages such as Javascript, Python, and Dart. I have experience using various frameworks and tools in my projects, including React Native, Express.js, Postgres, Django, iOS Swift, and Flutter.
         </h3>
         <h3 style={styles.projects} className="projects">
             Projects
@@ -55,8 +55,8 @@ const styles = {
         fontSize: '1.2rem', 
         lineHeight: '1.5', 
         marginBottom: '1rem', 
-        marginRight: '18rem',
-        color: 'white'
+        marginRight: '40rem',
+        color: 'white',
     },
     Display: {
         height: 'auto',
@@ -65,14 +65,13 @@ const styles = {
     },
     projects: {
         textAlign: 'center',
-        marginBottom: '1rem', 
+        marginBottom: '.5rem', 
         fontSize: '3rem', 
         fontWeight: 'bold',
-        paddingTop: '1em'
     },
     h5: {
         textAlign: 'center',
-        marginBottom: '1rem', 
+        marginBottom: '.5rem', 
         fontSize: '1rem', 
         textDecoration: 'none',
         color: 'white',

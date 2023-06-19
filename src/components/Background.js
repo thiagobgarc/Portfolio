@@ -1,14 +1,14 @@
 import React, { useRef, useEffect } from "react";
 import * as THREE from "three";
-import WAVES from "vanta/src/vanta.net";
+import WAVES from "vanta/src/vanta.rings";
 
 export const MyComponent = () => {
   const myRef = useRef(null);
-  let netEffect = null; // initialize the variable
+  let ringsEffect = null; // initialize the variable
 
   useEffect(() => {
-    if (myRef.current && !netEffect) {
-      netEffect = WAVES({
+    if (myRef.current && !ringsEffect) {
+      ringsEffect = WAVES({
         THREE,
         el: myRef.current,
         mouseControls: true,
@@ -18,15 +18,13 @@ export const MyComponent = () => {
         minWidth: 200.00,
         scale: 1.00,
         scaleMobile: 1.00,
-        color: 0xb83ce1,
-        backgroundColor: 0x17112d,
-        maxDistance: 27.00,
-        spacing: 19.00
+        backgroundColor: 0x2639cf,
+        color: 0x3355c
       })
     }
 
     return () => {
-        netEffect.destroy()
+        ringsEffect.destroy()
       };
     }, [])
 
