@@ -21,7 +21,7 @@ export const Home = () => {
         <h3 style={styles.projects} className="projects">
             Projects
         </h3>
-        <h5 style={styles.h5}>
+        {/* <h5 style={styles.h5}>
             <a href={seedData.verseMe.link}>{seedData.verseMe.projectName}</a>
         </h5>
         <h5 style={styles.h5}>
@@ -35,7 +35,14 @@ export const Home = () => {
         </h5>
         <h5 style={styles.h5}>
             <a href={seedData.yada.link}>{seedData.yada.projectName}</a>
-        </h5>
+        </h5> */}
+<div>
+  {seedData.map((seed, index) => (
+    <h5 style={styles.h5} key={index}>
+      <a href={seed.link}>{seed.projectName}</a>
+    </h5>
+  ))}
+</div>
         </div>
         </div>
     )
