@@ -16,11 +16,6 @@ const seedData = [
       link: 'https://github.com/s-laul/roomiefinderz-frontend'
     },
     {
-      projectName: 'React Message',
-      image: '',
-      link: 'https://github.com/thiagobgarc/ReactMessage'
-    },
-    {
       projectName: 'Yada',
       image: '',
       link: 'https://github.com/thiagobgarc/YadaFp-Frontend'
