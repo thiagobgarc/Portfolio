@@ -8,13 +8,13 @@ const seedData = [
       projectName: 'Verse Me',
       image: verseMe,
       link: 'https://github.com/thiagobgarc/Verse-Me',
-      description: "For my first project I decided to take things slow and grasp JS by retrieving data through an API, either from a search bar or randomized button. I used DOM manipulation to retrieve the data on two API's. One is specifically to search and the other to randomize."
+      description: "For my first project I decided to take things slow and grasp JS by retrieving data through an API, either from a search bar or randomized button."
     },
     {
       projectName: 'Bullseye',
       image: Bullseye,
       link: 'https://github.com/thiagobgarc/BullsEye',
-      description: "It is one of my first projects in Swift. The objective of the game is for the user to locate and select the exact number displayed by the application. If the user successfully finds the correct number, they are awarded points. To enhance the user experience, additional features have been implemented, including a navigation button for ease of use."
+      description: "It is one of my first projects in Swift. The objective of the game is for the user to locate and select the exact number displayed by the application."
     },
     {
       projectName: 'Roomies',

@@ -108,8 +108,8 @@ const styles = {
         width: '200'
       },
       p: {
-        marginLeft: '10em',
-        marginRight: '10em'
+        marginLeft: '20em',
+        marginRight: '20em'
       }
     
 }
