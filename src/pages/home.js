@@ -2,7 +2,6 @@ import { MyComponent } from "../components/Background"
 import { Navbars } from "../nav/NavBar"
 import "./projects.css"
 import seedData from "../seed/seedData"
-import images from "../images/verseMe"
 
 export const Home = () => {
 
@@ -32,7 +31,11 @@ export const Home = () => {
             {/* Mapping Seed Data */}
             {seedData.map((seed, index) => (
             <h5 style={styles.h5} key={index}>
-                <a href={seed.link}>{seed.projectName}</a>
+                <a href={seed.link}>{seed.projectName}
+                <br/>
+                <img src={seed.image} style={{ height: '200px', width: '400px', borderRadius: '20%', alignItems: 'center', justifyContent: 'center' }}/>
+                </a>
+                
             </h5>
   ))}
 </div>
@@ -71,11 +74,12 @@ const styles = {
     },
     h5: {
         textAlign: 'center',
-        marginBottom: '.5rem', 
-        fontSize: '1rem', 
+        marginBottom: '1rem', 
+        fontSize: '1.25rem', 
         textDecoration: 'none',
         color: 'white',
-        fontWeight: 'bold'
+        fontWeight: 'bold',
+
     },
     box: {
         // backgroundColor: 'grey',
@@ -93,6 +97,11 @@ const styles = {
         flexDirection: 'column',
         height: '100vh',
         minHeight: '200px'
+      },
+      image: {
+        borderRadius: '20%',
+        height: '200',
+        width: '200'
       }
     
 }
