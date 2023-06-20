@@ -34,8 +34,12 @@ export const Home = () => {
                 <a href={seed.link}>{seed.projectName}
                 <br/>
                 <img src={seed.image} style={{ height: '200px', width: '400px', borderRadius: '20%', alignItems: 'center', justifyContent: 'center' }}/>
+                <br/>
+                <p style={styles.p}>
+                    {seed.description}
+                </p>
                 </a>
-                
+                <br/>
             </h5>
   ))}
 </div>
@@ -102,6 +106,10 @@ const styles = {
         borderRadius: '20%',
         height: '200',
         width: '200'
+      },
+      p: {
+        marginLeft: '10em',
+        marginRight: '10em'
       }
     
 }
