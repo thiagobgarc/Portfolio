@@ -20,7 +20,7 @@ export const Home = () => {
         </h1>
         {/* Summary text */}
         <h3 style={styles.text2} className="summary">
-        As a software engineer, I have expertise in programming languages such as Javascript, Python, and Dart. I have experience using various frameworks and tools in my projects, including React Native, Express.js, Postgres, Django, iOS Swift, and Flutter.
+        Full-Stack Software Engineer
         </h3>
         {/* H3 header for Projects */}
         <h3 style={styles.projects} className="projects">
