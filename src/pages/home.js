@@ -72,7 +72,7 @@ const styles = {
     },
     projects: {
         textAlign: 'center',
-        marginBottom: '.5rem', 
+        marginBottom: '1rem', 
         fontSize: '3rem', 
         fontWeight: 'bold',
     },
