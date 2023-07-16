@@ -59,7 +59,7 @@ const styles = {
         color: 'white'
     },
     text2: {
-        fontSize: '3rem', 
+        fontSize: '1.25rem', 
         lineHeight: '1.5', 
         marginBottom: '1rem', 
         marginRight: '40rem',
@@ -76,7 +76,6 @@ const styles = {
         marginTop: '3rem',
         fontSize: '3rem', 
         fontWeight: 'bold',
-        textDecoration: 'underline'
     },
     h5: {
         textAlign: 'center',
