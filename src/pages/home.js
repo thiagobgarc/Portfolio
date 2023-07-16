@@ -20,7 +20,7 @@ export const Home = () => {
         </h1>
         {/* Summary text */}
         <h3 style={styles.text2} className="summary">
-        Full-Stack Software Engineer
+        I am a Full-Stack Software Engineer
         </h3>
         {/* H3 header for Projects */}
         <h3 style={styles.projects} className="projects">
@@ -73,6 +73,7 @@ const styles = {
     projects: {
         textAlign: 'center',
         marginBottom: '1rem', 
+        marginTop: '3rem',
         fontSize: '3rem', 
         fontWeight: 'bold',
     },
