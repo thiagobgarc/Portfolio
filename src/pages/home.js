@@ -2,6 +2,7 @@ import { MyComponent } from "../components/Background"
 import { Navbars } from "../nav/NavBar"
 import "./projects.css"
 import seedData from "../seed/seedData"
+import { Card, CardBody, CardTitle, CardText, Button, CardGroup } from "reactstrap"
 
 export const Home = () => {
 
@@ -20,7 +21,7 @@ export const Home = () => {
         </h1>
         {/* Summary text */}
         <h3 style={styles.text2} className="summary">
-        I am a Full-Stack Software Engineer
+        I am a Software Engineer
         </h3>
         {/* H3 header for Projects */}
         <h3 style={styles.projects} className="projects">
@@ -30,17 +31,31 @@ export const Home = () => {
         <div>
             {/* Mapping Seed Data */}
             {seedData.map((seed, index) => (
-            <h5 style={styles.h5} key={index}>
-                <a href={seed.link}>{seed.projectName}
-                <br/>
-                <img src={seed.image} style={{ height: '200px', width: '400px', borderRadius: '20%', alignItems: 'center', justifyContent: 'center' }}/>
-                <br/>
-                <p style={styles.p}>
-                    {seed.description}
-                </p>
-                </a>
-                <br/>
-            </h5>
+        <CardGroup style={{
+            width: '50rem', marginBottom: '7rem',display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center ', textAlign: 'center',
+            marginLeft: '23.5%'}}>
+        <Card
+        style={{
+          width: '18rem',
+        }}
+      >
+        <img
+          alt="Projects"
+          src={seed.image}
+          style={{height: '20rem'}}
+        />
+        <CardBody>
+          <CardText>
+            {seed.description}
+          </CardText>
+          <Button color="primary" outline>
+            <a href={seed.link}>GitHub</a>
+          </Button>
+        </CardBody>
+      </Card>
+      </CardGroup>
   ))}
 </div>
         </div>
