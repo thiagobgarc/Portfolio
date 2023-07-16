@@ -35,7 +35,7 @@ export const Home = () => {
             width: '50rem', marginBottom: '7rem',display: 'flex',
             justifyContent: 'center',
             alignItems: 'center ', textAlign: 'center',
-            marginLeft: '23.5%'}}>
+            marginLeft: '23.5%', marginTop: '-10rem'}}>
         <Card
         style={{
           width: '18rem',
@@ -88,7 +88,7 @@ const styles = {
     projects: {
         textAlign: 'center',
         marginBottom: '1rem', 
-        marginTop: '1.75rem',
+        marginTop: '-1rem',
         fontSize: '3rem', 
         fontWeight: 'bold',
     },
