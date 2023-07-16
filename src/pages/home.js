@@ -59,7 +59,7 @@ const styles = {
         color: 'white'
     },
     text2: {
-        fontSize: '1.25rem', 
+        fontSize: '1.75rem', 
         lineHeight: '1.5', 
         marginBottom: '1rem', 
         marginRight: '40rem',
