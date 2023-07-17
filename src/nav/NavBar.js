@@ -22,7 +22,7 @@ export const Navbars = (args) => {
 
   return (
     <div>
-      <Navbar {...args}>
+      <Navbar {...args} color='dark'>
         <NavbarBrand href="/" style={styles.bold}>
         <img
         src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
@@ -37,20 +37,20 @@ export const Navbars = (args) => {
         <Collapse isOpen={isOpen} navbar>
           <Nav className="me-auto" navbar>
             <NavItem>
-              <NavLink href="/">Home</NavLink>
+              <NavLink href="/" style={styles.bold}>Home</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href='/about'>
+              <NavLink href='/about' style={styles.bold}>
                 About
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href='/contact'>
+              <NavLink href='/contact' style={styles.bold}>
                 Contact
               </NavLink>
             </NavItem>
-            <UncontrolledDropdown nav inNavbar>
-              <DropdownToggle nav caret>
+            <UncontrolledDropdown nav inNavbar >
+              <DropdownToggle nav caret style={styles.bold}>
                 Links
               </DropdownToggle>
               <DropdownMenu right>
@@ -76,6 +76,7 @@ export const Navbars = (args) => {
 
 const styles = {
     bold: {
-        fontWeight: 'bold'
+        fontWeight: 'bold',
+        color: 'white'
     }
 }

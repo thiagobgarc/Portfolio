@@ -23,41 +23,23 @@ export const Home = () => {
         <h3 style={styles.text2} className="summary">
         I am a Software Engineer
         </h3>
-        {/* H3 header for Projects */}
-        <h3 style={styles.projects} className="projects">
-            Projects
-        </h3>
-        {/* Separate div for MAP method */}
-        <div>
-            {/* Mapping Seed Data */}
-            {seedData.map((seed, index) => (
-        <CardGroup style={{
-            width: '50rem', marginBottom: '7rem',display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center ', textAlign: 'center',
-            marginLeft: '23.5%', marginTop: '-5rem', top: '-5rem'}}>
-        <Card
-        style={{
-          width: '18rem',
-        }}
-      >
-        <img
-          alt="Projects"
-          src={seed.image}
-          style={{height: '20rem'}}
-        />
-        <CardBody>
-          <CardText>
-            {seed.description}
-          </CardText>
-          <Button color="primary" outline>
-            <a href={seed.link}>GitHub</a>
-          </Button>
-        </CardBody>
-      </Card>
-      </CardGroup>
-  ))}
-</div>
+        <Button color="light" outline
+        href="/projects"
+        style={{marginRight: '1rem', marginLeft: '1rem'}}
+        >
+          Projects
+        </Button>
+        <Button color="light" outline
+        href='https://github.com/thiagobgarc'
+        style={{marginRight: '1rem'}}
+        >
+          GitHub
+        </Button>
+        <Button color="light" outline
+        href="https://www.linkedin.com/in/thiago-bueno-garcia-34604a25a/"
+        >
+          linkedIn
+        </Button>
         </div>
         </div>
     )
@@ -71,7 +53,8 @@ const styles = {
         marginTop: '1.5rem',
         fontWeight: 'bold',
         display: 'flex',
-        color: 'white'
+        color: 'white',
+        top: '6rem'
     },
     text2: {
         fontSize: '1.7rem', 
@@ -79,18 +62,12 @@ const styles = {
         marginBottom: '1rem', 
         marginRight: '40rem',
         color: 'white',
+        marginLeft: '.5rem'
     },
     Display: {
         height: 'auto',
         width: 'auto',
         background: 'snow'
-    },
-    projects: {
-        textAlign: 'center',
-        marginBottom: '1rem', 
-        marginTop: '-2rem',
-        fontSize: '3rem', 
-        fontWeight: 'bold',
     },
     h5: {
         textAlign: 'center',

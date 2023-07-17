@@ -14,12 +14,13 @@ export const MyComponent = () => {
         mouseControls: true,
         touchControls: true,
         gyroControls: false,
-        minHeight: 550.00,
+        minHeight: 671.50,
         minWidth: 200.00,
+        maxWidth: 'none',
         scale: 1.00,
         scaleMobile: 1.00,
-        backgroundColor: 0x2639cf,
-        color: 0x3355c
+        backgroundColor: 0x80809,
+        color: 0x666b66
       })
     }
 

@@ -26,7 +26,7 @@ const seedData = [
       projectName: 'YadaFP',
       image: Yada,
       link: 'https://github.com/thiagobgarc/YadaFp-Frontend',
-      description: "Welcome to the Food Pantry app! The mission is to create a mock up of a future mobile application to help my current church and impact our community by providing a convenient way for people to volunteer, and receive assistance through our food pantry."
+      description: "Welcome to the Food Pantry app! The mission is to create a mock up of a future mobile application to help my current church and impact our community."
     }
   ]
 export default seedData
