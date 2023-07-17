@@ -46,6 +46,7 @@ const Projects = () => {
       </Card>
       </CardGroup>
   ))}
+  <MyComponent/>
 </div>
 </div>
     )
