@@ -7,7 +7,7 @@ const Projects = () => {
     return (
         <div>
         <Navbars/>
-        <MyComponent/>
+        <MyComponent style={{height: '1000vh'}}/>
         {/* H3 header for Projects */}
         <h3 style={styles.projects} className="projects">
             Projects
@@ -18,7 +18,8 @@ const Projects = () => {
             display: 'flex',
             flexWrap: 'wrap',
             justifyContent: 'center',
-            alignItems: 'center', width: '100%'
+            alignItems: 'center', 
+            width: '100%'
           }}
         >
             {/* Mapping Seed Data */}
@@ -27,7 +28,7 @@ const Projects = () => {
             height: '20rem', marginTop: '7.5rem', 
             marginRight: '2.5rem', 
             marginLeft: '2.5rem'
-            }} outline>
+            }} color="dark">
         <Card>
         <img
           alt="Projects"
