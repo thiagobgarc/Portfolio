@@ -19,9 +19,9 @@ export const MyComponent = () => {
         minWidth: 200.00,
         maxWidth: 'none',
         scale: 1.00,
-        scaleMobile: 1.00,
+        scaleMobile: 15.00,
         backgroundColor: 0x80809,
-        color: 0x666b66
+        color: 0x666b66,
       })
     }
 
