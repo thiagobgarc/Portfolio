@@ -22,6 +22,7 @@ export const MyComponent = () => {
         scaleMobile: 1.00,
         backgroundColor: 0x80809,
         color: 0x666b66,
+        flex: 1.00
       })
     }
 
