@@ -43,5 +43,5 @@ export const MyComponent = () => {
   }, [])
 
 
-  return <div ref={myRef}></div>
+  return <div ref={myRef} className="myComponent"></div>
 }
