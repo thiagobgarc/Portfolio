@@ -1,6 +1,6 @@
 @media (max-width: 768px) {
     .myComponent {
-      height: 1200px; /* Adjust the height for mobile screens */
+        background-color: 0x80809;
     }
   }
   
