@@ -45,11 +45,11 @@ const styles = {
     background: {
         backgroundColor: 'black',
         flex: '1',
-        height: '46.0625rem'
+        height: '50rem'
     },
     aboutMe: {
         borderBottom: "0.1875rem solid white",
         color: 'white',
-
+        fontSize: '10rem'
     }
 }
