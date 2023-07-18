@@ -1,0 +1,6 @@
+@media (max-height: 640px){
+    .background {
+        height: 100%;
+        background-size: cover;
+    }
+}

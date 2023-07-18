@@ -1,9 +1,10 @@
 import { Navbars } from "../nav/NavBar"
 import { MyComponent } from "./Background"
+import "./project.css"
 
 export const About = () => {
     return (
-        <div style={styles.background}>
+        <div style={styles.background} className="background">
             <Navbars/>
             <div>
         <h1 style={styles.aboutMe}>About Me</h1>
@@ -45,7 +46,7 @@ const styles = {
     background: {
         backgroundColor: 'black',
         flex: '1',
-        height: '50rem'
+        height: '46rem'
     },
     aboutMe: {
         borderBottom: "0.1875rem solid white",
