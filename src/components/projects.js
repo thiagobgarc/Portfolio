@@ -9,7 +9,7 @@ const Projects = () => {
     return (
         <div>
         <Navbars/>
-        <MyComponent className="myComponent"/>
+        <MyComponent />
         {/* H3 header for Projects */}
         <h3 style={styles.projects} className="projects">
             Projects
