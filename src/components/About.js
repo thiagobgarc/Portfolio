@@ -6,7 +6,7 @@ export const About = () => {
         <div style={styles.background}>
             <Navbars/>
             <div>
-        <h1 style={styles.aboutMe} className="aboutMe" style={{color: 'white'}}>About Me</h1>
+        <h1 style={styles.aboutMe}>About Me</h1>
         <div>
         <h3 style={styles.text}>
         Hello and welcome to my software engineering portfolio! My name is Thiago Garcia and I am a software engineer with a passion for creating elegant and effective solutions to complex problems.
@@ -45,9 +45,11 @@ const styles = {
     background: {
         backgroundColor: 'black',
         flex: '1',
-        height: '737px'
+        height: '46.0625rem'
     },
     aboutMe: {
-        borderBottom: "3px solid white"
+        borderBottom: "0.1875rem solid white",
+        color: 'white',
+
     }
 }
