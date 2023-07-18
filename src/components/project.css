@@ -2,7 +2,7 @@
     .background {
         background-image: linear-gradient(to bottom right, #0c0101, #03313e);
         background-size: cover;
-        height: 46rem;
+        height: 150%;
     }
 }
 
@@ -10,6 +10,5 @@
     background-image: linear-gradient(to bottom right, #0c0101, #03313e);
     background-size: cover;
     height: 46rem;
-    max-height: auto;
     max-width: 100%;
 }
