@@ -1,4 +1,4 @@
-@media (max-height: 640px){
+@media (min-device-height: 200px) and (max-device-height: 1280px){
     .background {
         background-image: linear-gradient(to bottom right, #0c0101, #03313e);
         background-size: cover;
@@ -10,4 +10,6 @@
     background-image: linear-gradient(to bottom right, #0c0101, #03313e);
     background-size: cover;
     height: 46rem;
+    max-height: auto;
+    max-width: 100%;
 }
