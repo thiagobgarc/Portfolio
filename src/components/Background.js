@@ -33,6 +33,9 @@ export const MyComponent = () => {
       })
     }
 
+    setBackgroundOnMobile();
+      window.addEventListener("resize", setBackgroundOnMobile);
+
     return () => {
       ringsEffect.destroy()
       window.removeEventListener("resize", setBackgroundOnMobile)
