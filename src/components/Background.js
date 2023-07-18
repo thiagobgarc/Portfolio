@@ -6,6 +6,14 @@ export const MyComponent = () => {
   const myRef = useRef(null);
   let ringsEffect = null; // initialize the variable
 
+  const setBackgroundOnMobile = () => {
+    const isMobile = window.matchMedia("(max-width: 768px)").matches;
+
+    if (isMobile) {
+      myRef.current.style.backgroundColor = "#80809";
+    }
+  };
+
   useEffect(() => {
     if (myRef.current && !ringsEffect) {
       ringsEffect = WAVES({
@@ -25,22 +33,11 @@ export const MyComponent = () => {
       })
     }
 
-    const setBackgroundOnMobile = () => {
-      const isMobile = window.matchMedia("(max-width: 768px)").matches;
-  
-      if (isMobile) {
-        myRef.current.style.backgroundColor = "#80809";
-      }
-    };
-
-    useEffect(() => {
-      setBackgroundOnMobile();
-      window.addEventListener("resize", setBackgroundOnMobile);
-
     return () => {
-        ringsEffect.destroy()
-      };
-    }, [])
+      ringsEffect.destroy()
+      window.removeEventListener("resize", setBackgroundOnMobile)
+    }
+  }, [])
 
 
   return <div ref={myRef}></div>
