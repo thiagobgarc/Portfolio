@@ -25,6 +25,18 @@ export const MyComponent = () => {
       })
     }
 
+    const setBackgroundOnMobile = () => {
+      const isMobile = window.matchMedia("(max-width: 768px)").matches;
+  
+      if (isMobile) {
+        myRef.current.style.backgroundColor = "#80809";
+      }
+    };
+
+    useEffect(() => {
+      setBackgroundOnMobile();
+      window.addEventListener("resize", setBackgroundOnMobile);
+
     return () => {
         ringsEffect.destroy()
       };
