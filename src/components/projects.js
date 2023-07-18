@@ -2,12 +2,14 @@ import { Card, CardBody, CardText, Button, CardGroup } from "reactstrap"
 import seedData from "../seed/seedData"
 import { Navbars } from "../nav/NavBar"
 import { MyComponent } from "./Background"
+import "./project.css"
+
 const Projects = () => {
 
     return (
         <div>
         <Navbars/>
-        <MyComponent style={{ maxheight: '640px'}}/>
+        <MyComponent className="myComponent"/>
         {/* H3 header for Projects */}
         <h3 style={styles.projects} className="projects">
             Projects
