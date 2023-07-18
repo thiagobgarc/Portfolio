@@ -1,4 +1,4 @@
-@media (max-width: 1000px) {
+@media (min-width: 250px) {
     .myComponent {
         position:absolute;
         z-index:-1;
