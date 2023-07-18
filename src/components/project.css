@@ -4,3 +4,9 @@
         background-size: cover;
     }
 }
+
+.background {
+    background-image: linear-gradient(to bottom right, #0c0101, #03313e);
+    background-size: cover;
+    height: 46rem;
+}

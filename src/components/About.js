@@ -44,13 +44,13 @@ const styles = {
         color: 'white'
     },
     background: {
-        backgroundColor: 'black',
-        height: '46rem',
-        backgroundSize: 'cover'
+        // backgroundColor: 'black',
+        // height: '46rem',
+        // backgroundSize: 'cover'
     },
     aboutMe: {
         borderBottom: "0.1875rem solid white",
         color: 'white',
-        fontSize: '10rem'
+        fontSize: '7rem'
     }
 }

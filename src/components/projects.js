@@ -5,11 +5,9 @@ import { MyComponent } from "./Background"
 import "./project.css"
 
 const Projects = () => {
-
     return (
-        <div>
+        <div className="background">
         <Navbars/>
-        <MyComponent />
         {/* H3 header for Projects */}
         <h3 style={styles.projects} className="projects">
             Projects
