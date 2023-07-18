@@ -1,7 +1,8 @@
 @media (max-height: 640px){
     .background {
-        height: 46rem;
+        background-image: linear-gradient(to bottom right, #0c0101, #03313e);
         background-size: cover;
+        height: 46rem;
     }
 }
 
