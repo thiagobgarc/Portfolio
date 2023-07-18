@@ -1,8 +1,11 @@
-@media (min-width: 250px) {
+@media (max-width: 768px) {
     .myComponent {
-        position:absolute;
-        z-index:-1;
-        width:100%;
-        height: 100%;
+      height: 300px; /* Adjust the height for mobile screens */
+    }
+  }
+  
+  @media (min-width: 769px) {
+    .myComponent {
+      height: 600px; /* Adjust the height for larger screens */
     }
   }
