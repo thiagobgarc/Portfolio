@@ -7,7 +7,7 @@ const Projects = () => {
     return (
         <div>
         <Navbars/>
-        <MyComponent style={{height: '1000vh'}}/>
+        <MyComponent style={{ maxheight: '640px'}}/>
         {/* H3 header for Projects */}
         <h3 style={styles.projects} className="projects">
             Projects
@@ -46,7 +46,6 @@ const Projects = () => {
       </Card>
       </CardGroup>
   ))}
-  <MyComponent/>
 </div>
 </div>
     )
