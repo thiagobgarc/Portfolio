@@ -1,15 +1,16 @@
 import { Navbars } from "../nav/NavBar"
 import { MyComponent } from "./Background"
-import "./project.css"
+import "./about.css"
 
 export const About = () => {
     return (
-        <div style={styles.background} className="background">
+        <div >
             <Navbars/>
+            <MyComponent/>
             <div>
-        <h1 style={styles.aboutMe}>About Me</h1>
+        <h1 className="title">About Me</h1>
         <div>
-        <h3 style={styles.text}>
+        <h3 >
         Hello and welcome to my software engineering portfolio! My name is Thiago Garcia and I am a software engineer with a passion for creating elegant and effective solutions to complex problems.
 <br/>
 <br/>
@@ -31,26 +32,4 @@ Thank you for taking the time to learn more about me and my software engineering
         </div>
         </div>
     )
-}
-
-const styles = {
-    text: {
-        paddingLeft: 100,
-        paddingRight: 100,
-        fontSize: 'small',
-        position: 'relative',
-        top: 50,
-        paddingBottom: 50,
-        color: 'white'
-    },
-    background: {
-        // backgroundColor: 'black',
-        // height: '46rem',
-        // backgroundSize: 'cover'
-    },
-    aboutMe: {
-        borderBottom: "0.1875rem solid white",
-        color: 'white',
-        fontSize: '7rem'
-    }
 }
