@@ -38,7 +38,7 @@ const Projects = (args) => {
   const handleResize = () => {
     if (window.innerWidth <= 350) {
       // Mobile view
-      setCarouselWidth('10rem');
+      setCarouselWidth('50rem');
     } else if (window.innerWidth <= 768) {
       // Tablet view
       setCarouselWidth('75rem');
@@ -85,7 +85,7 @@ const Projects = (args) => {
         <MyComponent />
         <div className="carouselContainer">
         <Carousel activeIndex={activeIndex} next={next} previous={previous} style={{
-          height: args.carouselHeight, width: '50rem', marginLeft: '25rem', marginTop: '7.5rem', borderRadius: '30px'
+          height: args.carouselHeight, marginLeft: '25rem', marginTop: '7.5rem', borderRadius: '30px', width: '100%'
         }} className='carousel'>
         <CarouselIndicators
           items={seedData}
@@ -117,13 +117,3 @@ Projects.defaultProps = {
 };
 
 export default Projects
-
-const styles = {
-    projects: {
-        textAlign: 'center',
-        marginBottom: '1rem', 
-        marginTop: '-2rem',
-        fontSize: '3rem', 
-        fontWeight: 'bold',
-    },
-}

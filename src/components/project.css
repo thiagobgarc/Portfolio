@@ -31,14 +31,13 @@
 
   @media (min-width: 200px) and (max-width: 640px){
     .carouselContainer {
-      width: 40vw;
-      position: absolute;
-      right: 600px;
-      /* height:; */
+      width: 60%;
+      right: 390px;
+      height:200px;
+      bottom: 25px;
     }
     .carouselItem img {
-      max-width: 20rem;
-      
+      max-width: 100%;
     }
     .carouselIndicatorHidden {
       display: none;
