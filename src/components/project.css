@@ -55,6 +55,9 @@
       
     }
     .carouselIndicator {
-      max-width: 20px;
+      display: none;
+    }
+    .carouselControl {
+      display: none;
     }
   }
