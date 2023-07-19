@@ -19,3 +19,16 @@
     color: rgb(14, 28, 60) !important;
     font-weight: bold !important;
   }
+
+  /* Default styles for mobile */
+.carouselContainer {
+    width: 90%; /* Set the container width for mobile screens */
+    margin: 0 auto; /* Center the carousel on the page */
+  }
+  
+  /* Media query for screens larger than 768px (tablet and above) */
+  @media (min-width: 768px) {
+    .carouselContainer {
+      width: 75rem; /* Set the container width for larger screens */
+    }
+  }
