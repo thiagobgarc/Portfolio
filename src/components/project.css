@@ -1,21 +1,7 @@
-@media (min-device-height: 200px) and (max-device-height: 640){
-    .background {
-        /* background-size: cover; */
-        /* width: 5px; */
-        /* flex: 1; */
-    }
-}
 
-.background {
-    background-image: linear-gradient(to bottom right, #0c0101, #03313e);
-    background-size: cover;
-    height: 46rem;
-    max-width: 100%;
-    flex: 1;
-}
 
 .carouselCaption {
-    color: rgb(14, 28, 60) !important;
+    color: rgb(27, 27, 29) !important;
     font-weight: bold !important;
   }
 
@@ -47,7 +33,7 @@
     .carouselContainer {
       width: 40vw;
       position: absolute;
-      right: 400px;
+      right: 620px;
       /* height:; */
     }
     .carouselItem img {

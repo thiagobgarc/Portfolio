@@ -85,7 +85,7 @@ const Projects = (args) => {
         <MyComponent />
         <div className="carouselContainer">
         <Carousel activeIndex={activeIndex} next={next} previous={previous} style={{
-          height: args.carouselHeight, width: '50rem', marginLeft: '12.5rem', marginTop: '7.5rem', borderRadius: '20px'
+          height: args.carouselHeight, width: '50rem', marginLeft: '25rem', marginTop: '7.5rem', borderRadius: '30px'
         }} className='carousel'>
         <CarouselIndicators
           items={seedData}
