@@ -70,7 +70,6 @@ const Projects = (args) => {
         <img src={seed.image} alt={seed.projectName} style={{ height: args.carouselHeight, width: '50rem', borderRadius: '20px', opacity: '60%' }}/>
         <CarouselCaption
         className='carouselCaption'
-        captionText={seed.description}
         captionHeader={seed.projectName}
         href={seed.link}
         style={{ color: 'black' }}
