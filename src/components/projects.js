@@ -42,11 +42,12 @@ const Projects = (args) => {
       onExiting={() => setAnimating(true)}
       onExited={() => setAnimating(false)}
       >
-        <img src={seed.image} alt={seed.projectName} style={{ height: args.carouselHeight, width: '50rem' }}/>
+        <img src={seed.image} alt={seed.projectName} style={{ height: args.carouselHeight, width: '50rem', borderRadius: '20px', opacity: '60%' }}/>
         <CarouselCaption
         className='carouselCaption'
         captionText={seed.description}
         captionHeader={seed.projectName}
+        href={seed.link}
         style={{ color: 'black' }}
         />
       </CarouselItem>
@@ -58,7 +59,7 @@ const Projects = (args) => {
         <Navbars/>
         <MyComponent/>
         <Carousel activeIndex={activeIndex} next={next} previous={previous} style={{
-          height: args.carouselHeight, width: '50rem', marginLeft: '25rem', marginTop: '7.5rem'
+          height: args.carouselHeight, width: '50rem', marginLeft: '25rem', marginTop: '7.5rem', borderRadius: '20px'
         }}>
         <CarouselIndicators
           items={seedData}
