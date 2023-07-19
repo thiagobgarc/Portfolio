@@ -67,12 +67,12 @@ const Projects = (args) => {
       onExiting={() => setAnimating(true)}
       onExited={() => setAnimating(false)}
       >
-        <img src={seed.image} alt={seed.projectName} style={{ height: args.carouselHeight, width: '50rem', borderRadius: '20px', opacity: '60%' }}/>
+        <img src={seed.image} alt={seed.projectName} style={{ height: args.carouselHeight, width: '50rem', borderRadius: '20px', opacity: '80%' }}/>
         <CarouselCaption
         className='carouselCaption'
         captionHeader={seed.projectName}
         href={seed.link}
-        style={{ color: 'black' }}
+        style={{ color: 'black', fontSize: '25px' }}
         />
       </CarouselItem>
       )
