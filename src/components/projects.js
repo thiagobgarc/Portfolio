@@ -44,6 +44,7 @@ const Projects = (args) => {
       >
         <img src={seed.image} alt={seed.projectName} style={{ height: args.carouselHeight, width: '50rem' }}/>
         <CarouselCaption
+        className='carouselCaption'
         captionText={seed.description}
         captionHeader={seed.projectName}
         style={{ color: 'black' }}
