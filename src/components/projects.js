@@ -1,55 +1,88 @@
-import { Card, CardBody, CardText, Button, CardGroup } from "reactstrap"
+import {
+  Carousel,
+  CarouselItem,
+  CarouselControl,
+  CarouselIndicators,
+  CarouselCaption,
+  UncontrolledCarousel,
+} from 'reactstrap';
 import seedData from "../seed/seedData"
 import { Navbars } from "../nav/NavBar"
 import { MyComponent } from "./Background"
 import "./project.css"
+import { useState } from 'react';
 
-const Projects = () => {
-    return (
-        <div className="background">
-        <Navbars/>
-        {/* H3 header for Projects */}
-        <h3 style={styles.projects} className="projects">
-            Projects
-        </h3>
-        {/* Separate div for MAP method */}
-        <div
-        style={{
-            display: 'flex',
-            flexWrap: 'wrap',
-            justifyContent: 'center',
-            alignItems: 'center', 
-            width: '100%'
-          }}
-        >
-            {/* Mapping Seed Data */}
-            {seedData.map((seed, index) => (
-        <CardGroup style={{ width: '15rem',
-            height: '20rem', marginTop: '7.5rem', 
-            marginRight: '2.5rem', 
-            marginLeft: '2.5rem'
-            }} color="dark">
-        <Card>
-        <img
-          alt="Projects"
-          src={seed.image}
-          style={{height: '12.5rem'}}
+const Projects = (args) => {
+  const [activeIndex, setActiveIndex] = useState(0);
+  const [animating, setAnimating] = useState(false);
+
+  const next = () => {
+    if (animating) return;
+    const nextIndex = activeIndex === seedData.length - 1 ? 0 : activeIndex + 1;
+    setActiveIndex(nextIndex);
+  };
+
+  const previous = () => {
+    if (animating) return;
+    const nextIndex = activeIndex === 0 ? seedData.length - 1 : activeIndex - 1;
+    setActiveIndex(nextIndex);
+  };
+
+  const goToIndex = (newIndex) => {
+    if (animating) return;
+    setActiveIndex(newIndex);
+  };
+
+  // {/* Mapping Seed Data */}
+  const slides = seedData.map((seed) => {
+      return (
+      <CarouselItem
+      className='custom-tag'
+      key={seed.key}
+      onExiting={() => setAnimating(true)}
+      onExited={() => setAnimating(false)}
+      >
+        <img src={seed.image} alt={seed.projectName} style={{ height: args.carouselHeight, width: '50rem' }}/>
+        <CarouselCaption
+        captionText={seed.description}
+        captionHeader={seed.projectName}
+        style={{ color: 'black' }}
         />
-        <CardBody>
-          <CardText>
-            {seed.description}
-          </CardText>
-          <Button color="primary" outline>
-            <a href={seed.link}>GitHub</a>
-          </Button>
-        </CardBody>
-      </Card>
-      </CardGroup>
-  ))}
-</div>
-</div>
+      </CarouselItem>
+      )
+      })
+
+    return (
+      <div>
+        <Navbars/>
+        <MyComponent/>
+        <Carousel activeIndex={activeIndex} next={next} previous={previous} style={{
+          height: args.carouselHeight, width: '50rem', marginLeft: '25rem', marginTop: '7.5rem'
+        }}>
+        <CarouselIndicators
+          items={seedData}
+          activeIndex={activeIndex}
+          onClickHandler={goToIndex}
+        />
+        {slides}
+        <CarouselControl
+          direction="prev"
+          directionText="Previous"
+          onClickHandler={previous}
+        />
+        <CarouselControl
+          direction="next"
+          directionText="Next"
+          onClickHandler={next}
+        />
+      </Carousel>
+      </div>
     )
 }
+
+Projects.defaultProps = {
+  carouselHeight: '25rem', // Adjust this to your desired height
+};
 
 export default Projects
 

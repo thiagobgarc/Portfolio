@@ -3,6 +3,7 @@
         background-image: linear-gradient(to bottom right, #0c0101, #03313e);
         background-size: cover;
         height: 150%;
+        flex: 1;
     }
 }
 
@@ -11,4 +12,5 @@
     background-size: cover;
     height: 46rem;
     max-width: 100%;
+    flex: 1;
 }
