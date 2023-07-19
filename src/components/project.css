@@ -27,6 +27,12 @@
       position: relative;
       margin-right:30rem;
     }
+    .carouselControlHidden {
+      display: none;
+    }
+    .carouselIndicatorHidden {
+      right: 380px;
+    }
   }
 
   @media (min-width: 200px) and (max-width: 640px){
