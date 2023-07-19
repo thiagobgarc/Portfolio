@@ -14,7 +14,7 @@ export const MyComponent = () => {
         mouseControls: true,
         touchControls: true,
         gyroControls: false,
-        minHeight: 671.50,
+        minHeight: 670.50,
         minWidth: 200.00,
         maxWidth: 'none',
         scale: 1.00,

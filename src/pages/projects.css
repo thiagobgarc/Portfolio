@@ -18,9 +18,10 @@ h5 {
 }
 
 h1 {
-    position: relative;
-    top: .25em;
-    font-size: .5em;
+    font-weight: 400px;
+    font-size: 7rem;
+    margin-top: 250px;
+    color: white;
 }
 
 a {
@@ -42,6 +43,9 @@ div {
    }
    .text {
     font-size: 20px;
+   }
+   h1 {
+    font-size: 50px;
    }
 }
 

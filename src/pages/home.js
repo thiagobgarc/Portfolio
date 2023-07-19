@@ -47,14 +47,14 @@ export const Home = () => {
 
 const styles = {
     Text: {
-        fontSize: '7rem', 
-        lineHeight: '3', 
-        marginBottom: '3rem', 
-        marginTop: '1.5rem',
-        fontWeight: 'bold',
-        display: 'flex',
-        color: 'white',
-        top: '6rem'
+        // fontSize: '7rem', 
+        // lineHeight: '3', 
+        // marginBottom: '3rem', 
+        // marginTop: '1.5rem',
+        // fontWeight: 'bold',
+        // display: 'flex',
+        // color: 'white',
+        // top: '6rem'
     },
     // text2: {
     //     fontSize: '20px', 
