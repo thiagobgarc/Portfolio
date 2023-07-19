@@ -54,4 +54,7 @@
       max-width: 20rem;
       
     }
+    .carouselIndicator {
+      max-width: 20px;
+    }
   }

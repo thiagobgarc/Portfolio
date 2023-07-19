@@ -86,11 +86,12 @@ const Projects = (args) => {
         <div className="carouselContainer">
         <Carousel activeIndex={activeIndex} next={next} previous={previous} style={{
           height: args.carouselHeight, width: '50rem', marginLeft: '12.5rem', marginTop: '7.5rem', borderRadius: '20px'
-        }}>
+        }} className='carousel'>
         <CarouselIndicators
           items={seedData}
           activeIndex={activeIndex}
           onClickHandler={goToIndex}
+          className='carouselIndicator'
         />
         {slides}
         <CarouselControl
