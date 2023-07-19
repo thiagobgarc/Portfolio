@@ -47,7 +47,7 @@ export const Home = () => {
 
 const styles = {
     Text: {
-        fontSize: '5rem', 
+        fontSize: '7rem', 
         lineHeight: '3', 
         marginBottom: '3rem', 
         marginTop: '1.5rem',
