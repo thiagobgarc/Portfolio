@@ -91,18 +91,20 @@ const Projects = (args) => {
           items={seedData}
           activeIndex={activeIndex}
           onClickHandler={goToIndex}
-          className='carouselIndicator'
+          className={carouselWidth <= '640px' ? 'carouselIndicatorHidden' : 'carouselIndicator'}
         />
         {slides}
         <CarouselControl
           direction="prev"
           directionText="Previous"
           onClickHandler={previous}
+          className={carouselWidth <= '640px' ? 'carouselControlHidden' : 'carouselControl'}
         />
         <CarouselControl
           direction="next"
           directionText="Next"
           onClickHandler={next}
+          className={carouselWidth <= '640px' ? 'carouselControlHidden' : 'carouselControl'}
         />
       </Carousel>
       </div>
