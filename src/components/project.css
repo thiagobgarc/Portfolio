@@ -31,8 +31,8 @@
 
   @media (min-width: 200px) and (max-width: 640px){
     .carouselContainer {
-      width: 70%;
-      right: 390px;
+      width: 90%;
+      right: 400px;
       height:200px;
       bottom: 25px;
     }
