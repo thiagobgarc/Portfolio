@@ -1,9 +1,8 @@
-@media (min-device-height: 200px) and (max-device-height: 1280px){
+@media (min-device-height: 200px) and (max-device-height: 640){
     .background {
-        background-image: linear-gradient(to bottom right, #0c0101, #03313e);
-        background-size: cover;
-        height: 150%;
-        flex: 1;
+        /* background-size: cover; */
+        /* width: 5px; */
+        /* flex: 1; */
     }
 }
 
@@ -36,9 +35,23 @@
   }
   
   /* Media query for screens larger than 768px (tablet and above) */
-  @media (min-width: 768px) {
+  @media (min-width: 750px) {
     .carouselContainer {
       width: 75vw; /* Set the container width for larger screens */
       position: relative;
+      margin-right:30rem;
+    }
+  }
+
+  @media (min-width: 200px) and (max-width: 640px){
+    .carouselContainer {
+      width: 40vw;
+      position: absolute;
+      right: 500px;
+      /* height:; */
+    }
+    .carouselItem img {
+      max-width: 30rem;
+      
     }
   }

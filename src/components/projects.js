@@ -16,6 +16,7 @@ const Projects = (args) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [animating, setAnimating] = useState(false);
   const [carouselWidth, setCarouselWidth] = useState('50rem');
+  const [carouselHeight, setCarouselHeight] = useState('50rem');
 
   const next = () => {
     if (animating) return;
@@ -35,7 +36,7 @@ const Projects = (args) => {
   };
 
   const handleResize = () => {
-    if (window.innerWidth <= 576) {
+    if (window.innerWidth <= 350) {
       // Mobile view
       setCarouselWidth('10rem');
     } else if (window.innerWidth <= 768) {
@@ -80,8 +81,8 @@ const Projects = (args) => {
 
     return (
       <div>
-        <Navbars/>
-        <MyComponent/>
+        <Navbars />
+        <MyComponent />
         <div className="carouselContainer">
         <Carousel activeIndex={activeIndex} next={next} previous={previous} style={{
           height: args.carouselHeight, width: '50rem', marginLeft: '12.5rem', marginTop: '7.5rem', borderRadius: '20px'
