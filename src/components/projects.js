@@ -98,13 +98,13 @@ const Projects = (args) => {
           direction="prev"
           directionText="Previous"
           onClickHandler={previous}
-          className={carouselWidth <= '640px' ? 'carouselControlHidden' : 'carouselControl'}
+          className={carouselWidth <= '640px' ? 'carouselControlHidden' : ''}
         />
         <CarouselControl
           direction="next"
           directionText="Next"
           onClickHandler={next}
-          className={carouselWidth <= '640px' ? 'carouselControlHidden' : 'carouselControl'}
+          className={carouselWidth <= '640px' ? 'carouselControlHidden' : ''}
         />
       </Carousel>
       </div>

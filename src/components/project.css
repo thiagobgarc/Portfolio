@@ -54,10 +54,10 @@
       max-width: 20rem;
       
     }
-    .carouselIndicator {
+    .carouselIndicatorHidden {
       display: none;
     }
-    .carouselControl{
+    .carouselControlHidden{
       display: none;
     }
   }
