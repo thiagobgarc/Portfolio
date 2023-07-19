@@ -17,8 +17,12 @@ h3 {
     /* color: aliceblue; */
 }
 
-/* @media (min-width: 200px) and (max-width: 640px){
-    .title {
-
+@media (min-width: 200px) and (max-width: 640px){
+    title {
+        margin-top: 50px;
     }
-} */
+    h3 {
+        font-size: 13px;
+        margin-right: 200px;
+    }
+}
