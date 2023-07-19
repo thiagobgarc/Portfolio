@@ -19,10 +19,13 @@ h3 {
 
 @media (min-width: 200px) and (max-width: 640px){
     title {
-        margin-top: 50px;
+        margin-top: 45px;
     }
     h3 {
         font-size: 13px;
         margin-right: 75px;
     }
+    .hiddenText {
+        display: none;
+      }
 }
