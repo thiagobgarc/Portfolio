@@ -2,7 +2,7 @@ import { MyComponent } from "../components/Background"
 import { Navbars } from "../nav/NavBar"
 import "./projects.css"
 import seedData from "../seed/seedData"
-import { Card, CardBody, CardTitle, CardText, Button, CardGroup } from "reactstrap"
+import {  Button } from "reactstrap"
 
 export const Home = () => {
 
@@ -14,18 +14,18 @@ export const Home = () => {
             {/* Background image */}
             <MyComponent/>
             {/* div with old gray box used in first code */}
-        <div style={styles.box}>
+        <div style={styles.box} className="box">
             {/* Welcome header */}
         <h1 style={styles.Text} className="welcome">
            Welcome
         </h1>
         {/* Summary text */}
-        <h3 style={styles.text2} className="summary">
+        <h3 style={styles.text2} className="text">
         I am a Software Engineer
         </h3>
         <Button color="light" outline
         href="/projects"
-        style={{marginRight: '1rem', marginLeft: '1rem'}}
+        style={{marginRight: '1rem', marginLeft: '2rem'}}
         >
           Projects
         </Button>
@@ -56,14 +56,15 @@ const styles = {
         color: 'white',
         top: '6rem'
     },
-    text2: {
-        fontSize: '1.7rem', 
-        lineHeight: '1.5', 
-        marginBottom: '1rem', 
-        marginRight: '40rem',
-        color: 'white',
-        marginLeft: '.5rem'
-    },
+    // text2: {
+    //     fontSize: '20px', 
+    //     lineHeight: '1.5', 
+    //     marginBottom: '1rem', 
+    //     marginRight: '40rem',
+    //     marginTop: '2rem',
+    //     color: 'white',
+    //     marginLeft: '.5rem'
+    // },
     Display: {
         height: 'auto',
         width: 'auto',
