@@ -22,13 +22,23 @@
 
   /* Default styles for mobile */
 .carouselContainer {
-    width: 90%; /* Set the container width for mobile screens */
+    width: 90vw; /* Set the container width for mobile screens */
     margin: 0 auto; /* Center the carousel on the page */
+    position: relative;
+  }
+
+  .carouselItem img {
+    width: 100%;
+    height: auto;
+    max-width: 50rem; /* Set a maximum width for the images, e.g., 50rem */
+    border-radius: 20px; /* Add rounded corners */
+    opacity: 0.6;
   }
   
   /* Media query for screens larger than 768px (tablet and above) */
   @media (min-width: 768px) {
     .carouselContainer {
-      width: 75rem; /* Set the container width for larger screens */
+      width: 75vw; /* Set the container width for larger screens */
+      position: relative;
     }
   }

@@ -10,11 +10,12 @@ import seedData from "../seed/seedData"
 import { Navbars } from "../nav/NavBar"
 import { MyComponent } from "./Background"
 import "./project.css"
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 const Projects = (args) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [animating, setAnimating] = useState(false);
+  const [carouselWidth, setCarouselWidth] = useState('50rem');
 
   const next = () => {
     if (animating) return;
@@ -33,11 +34,34 @@ const Projects = (args) => {
     setActiveIndex(newIndex);
   };
 
+  const handleResize = () => {
+    if (window.innerWidth <= 576) {
+      // Mobile view
+      setCarouselWidth('10rem');
+    } else if (window.innerWidth <= 768) {
+      // Tablet view
+      setCarouselWidth('75rem');
+    } else {
+      // Larger screens
+      setCarouselWidth('50rem');
+    }
+  };
+
+  // Attach the event listener to the window on component mount
+  useEffect(() => {
+    window.addEventListener('resize', handleResize);
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   // {/* Mapping Seed Data */}
   const slides = seedData.map((seed) => {
       return (
       <CarouselItem
-      className='custom-tag'
+      className='carouselItem'
       key={seed.key}
       onExiting={() => setAnimating(true)}
       onExited={() => setAnimating(false)}
