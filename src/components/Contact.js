@@ -4,6 +4,11 @@ import { MyComponent } from "./Background"
 import { Button, Input } from "reactstrap"
 import URL from "./URL"
 
+/**
+ * Generates the function comment for the given function body.
+ *
+ * @return {JSX.Element} The JSX element representing the Contact component.
+ */
 export const Contact = () => {
     // State for storing data from API
     const [data, setData] = useState([])

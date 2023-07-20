@@ -46,25 +46,6 @@ export const Home = () => {
 }
 
 const styles = {
-    Text: {
-        // fontSize: '7rem', 
-        // lineHeight: '3', 
-        // marginBottom: '3rem', 
-        // marginTop: '1.5rem',
-        // fontWeight: 'bold',
-        // display: 'flex',
-        // color: 'white',
-        // top: '6rem'
-    },
-    // text2: {
-    //     fontSize: '20px', 
-    //     lineHeight: '1.5', 
-    //     marginBottom: '1rem', 
-    //     marginRight: '40rem',
-    //     marginTop: '2rem',
-    //     color: 'white',
-    //     marginLeft: '.5rem'
-    // },
     Display: {
         height: 'auto',
         width: 'auto',
