@@ -25,7 +25,7 @@ export const Home = () => {
         </h3>
         <Button color="light" outline
         href="/projects"
-        style={{marginRight: '1rem', marginLeft: '4rem', textAlign: 'center'}}
+        style={{marginRight: '1rem', marginLeft: '2rem', textAlign: 'center'}}
         >
           Projects
         </Button>
