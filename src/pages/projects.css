@@ -47,10 +47,13 @@ div {
     font-size: 5px;
     text-align: center;
     margin-right: 10px;
+    color: white;
+    opacity: 100%;
    }
    h1 {
     font-size: 50px;
     text-align: center;
+    margin-top: 170px;
    }
 }
 
