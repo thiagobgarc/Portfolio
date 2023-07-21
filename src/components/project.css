@@ -18,6 +18,7 @@
     max-width: 50rem; /* Set a maximum width for the images, e.g., 50rem */
     border-radius: 20px; /* Add rounded corners */
     opacity: 0.6;
+    object-fit: contain;
   }
   
   /* Media query for screens larger than 768px (tablet and above) */
