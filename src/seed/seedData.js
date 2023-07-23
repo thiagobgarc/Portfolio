@@ -2,6 +2,8 @@ import verseMe from '../images/Screenshot 2023-06-18 at 12.25.16 PM.png'
 import Bullseye from '../images/WhatsApp Image 2023-06-02 at 23.25.37.jpeg'
 import RoomieFinderz from '../images/Concept1.png'
 import Yada from '../images/WhatsApp Image 2023-04-29 at 17.18.09.jpeg'
+import Shop from '../images/WhatsApp Image 2023-07-21 at 22.58.12.jpeg'
+import ReactMessage from '../images/WhatsApp Image 2023-07-21 at 22.58.32.jpeg'
 
 const seedData = [
     {
@@ -32,11 +34,17 @@ const seedData = [
       description: "Welcome to the Food Pantry app! The mission is to create a mock up of a future mobile application to help my current church and impact our community.",
       key:4
     },
-    // {
-    //   projectName: 'Shop',
-    //   link: 'https://github.com/thiagobgarc/Shop',
-    //   description: "This Full-Stack Application is a shop. However, it is not like most shops that you can browse without requiring to login.",
-    //   key:5
-    // }
+    {
+      projectName: 'Shop',
+      image: Shop,
+      link: 'https://github.com/thiagobgarc/Shop',
+      description: "This Full-Stack Application is a shop. However, it is not like most shops that you can browse without requiring to login.",
+      key:5
+    },
+    {
+      projectName: 'IM-React-Message',
+      image: ReactMessage,
+      key: 6
+    }
   ]
 export default seedData
